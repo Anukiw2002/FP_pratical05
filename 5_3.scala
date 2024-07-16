@@ -12,7 +12,7 @@ object FibSeq {
 
     def main(args: Array[String]): Unit = {
         print("Enter the number of Fibonacci numbers needed: ")
-        val n = scala.io.StdIn.readLine().toInt
+        val n = scala.io.StdIn.readInt()
         fibonacciSeq(n - 1)
     }
 }
