@@ -5,7 +5,7 @@ object InventoryManagement {
     var productName = ""
 
     while (productName != "done") {
-      print("Enter the product name: ")
+      print("Enter the product name (Enter done to stop): ")
       productName = scala.io.StdIn.readLine()
       if (productName != "done") {
         productList = productList :+ productName
@@ -58,7 +58,7 @@ object InventoryManagement {
       println("Option 3: Total number of products")
       println("Option 4: Exit")
       print("Enter the option number: ")
-      optNumber = scala.io.StdIn.readLine().toInt
+      optNumber = scala.io.StdIn.readInt()
 
       productList = options(optNumber, productList)
     }
